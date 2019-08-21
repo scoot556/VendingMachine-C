@@ -1,0 +1,219 @@
+valgrind --track-origins=yes ./vm stock.dat
+==28274== Memcheck, a memory error detector
+==28274== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==28274== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info
+==28274== Command: ./vm stock.dat
+==28274==
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 1
+Items Menu
+
+ID    | Name               | Available | Price
+--------------------------------------------------
+I0002 | Apple Pie          | 20        | $ 3.00
+I0003 | Lemon Cheesecake   | 20        | $ 4.00
+I0004 | Lemon Meringue Pie | 20        | $ 3.00
+I0005 | Lemon Tart         | 20        | $ 3.75
+I0001 | Meat Pie           | 20        | $ 3.50
+
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 2
+Purchase Item
+--------------
+Please enter the id of the item you want to purchase: I0004
+Item Found
+You have chosen item "Lemon Meringue Pie        This pie has a tender pastry crust, a tangy lemon filling and a topping of soft, fluffy meringue.". This costs $3.00.
+Please give the required money -- Type in the value of each note and coin in cents.
+
+If you do not wish to purchase this item, press enter to cancel
+
+You need to give $3.00: 500
+Thank you, here is your Lemon Meringue Pie, and your change of $2.00.
+Please come back soon.
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 1
+Items Menu
+
+ID    | Name               | Available | Price
+--------------------------------------------------
+I0002 | Apple Pie          | 20        | $ 3.00
+I0003 | Lemon Cheesecake   | 20        | $ 4.00
+I0004 | Lemon Meringue Pie | 19        | $ 3.00
+I0005 | Lemon Tart         | 20        | $ 3.75
+I0001 | Meat Pie           | 20        | $ 3.50
+
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 4
+The item you have entered will have the ID of I0006.
+Please enter the item name: Food Test
+Please enter the item's description: Wow
+Please enter the item's price: 3.00
+The item "Food Test --- Wow." has been added to the system
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 1
+Items Menu
+
+ID    | Name               | Available | Price
+--------------------------------------------------
+I0002 | Apple Pie          | 20        | $ 3.00
+I0003 | Lemon Cheesecake   | 20        | $ 4.00
+I0004 | Lemon Meringue Pie | 19        | $ 3.00
+I0005 | Lemon Tart         | 20        | $ 3.75
+I0001 | Meat Pie           | 20        | $ 3.50
+I0006 | Food Test          | 20        | $ 3.00
+
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 2
+Purchase Item
+--------------
+Please enter the id of the item you want to purchase: I0006
+Item Found
+You have chosen item "Food Test   Wow". This costs $3.00.
+Please give the required money -- Type in the value of each note and coin in cents.
+
+If you do not wish to purchase this item, press enter to cancel
+
+You need to give $3.00: 500
+Thank you, here is your Food Test, and your change of $2.00.
+Please come back soon.
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 1
+Items Menu
+
+ID    | Name               | Available | Price
+--------------------------------------------------
+I0002 | Apple Pie          | 20        | $ 3.00
+I0003 | Lemon Cheesecake   | 20        | $ 4.00
+I0004 | Lemon Meringue Pie | 19        | $ 3.00
+I0005 | Lemon Tart         | 20        | $ 3.75
+I0001 | Meat Pie           | 20        | $ 3.50
+I0006 | Food Test          | 19        | $ 3.00
+
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 5
+Please enter the ID of the item you wish to remove: I0001
+"I0001 - Meat Pie Yummy Beef in Gravy surrounded by pastry" has been removed.
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 1
+Items Menu
+
+ID    | Name               | Available | Price
+--------------------------------------------------
+I0001 | Apple Pie          | 20        | $ 3.00
+I0002 | Lemon Cheesecake   | 20        | $ 4.00
+I0003 | Lemon Meringue Pie | 19        | $ 3.00
+I0004 | Lemon Tart         | 20        | $ 3.75
+I0005 | Food Test          | 19        | $ 3.00
+
+Main Menu:
+1. Display Items
+2. Purchase Items
+3. Save and Exit
+Administrator-Only Menu:
+4. Add Item
+5. Remove Item
+6. Display Coins
+7. Reset Stocks
+8. Reset Coins
+9. Abort Program
+Select your option(1-9): 9
+Aborting Program...
+==28274==
+==28274== HEAP SUMMARY:
+==28274==     in use at exit: 0 bytes in 0 blocks
+==28274==   total heap usage: 14 allocs, 14 frees, 2,576 bytes allocated
+==28274==
+==28274== All heap blocks were freed -- no leaks are possible
+==28274==
+==28274== For counts of detected and suppressed errors, rerun with: -v
+==28274== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,9 @@
+==28120==
+==28120== HEAP SUMMARY:
+==28120==     in use at exit: 0 bytes in 0 blocks
+==28120==   total heap usage: 14 allocs, 14 frees, 2,576 bytes allocated
+==28120==
+==28120== All heap blocks were freed -- no leaks are possible
+==28120==
+==28120== For counts of detected and suppressed errors, rerun with: -v
+==28120== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
